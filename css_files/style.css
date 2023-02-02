@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20%;
+    background-color: lightgrey;
+}
+
+.todos-header {
+    display: flex;
+    justify-content: center;
+    color: lightcoral;
+    font-size: 100px;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.todo-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-style {
+    padding: 10px;
+    color: lightcoral;
+    background-color: rgb(233, 219, 219);
+    border-radius: 10%;
+}
+
+.task {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
