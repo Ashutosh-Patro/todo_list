@@ -1,5 +1,4 @@
 document.querySelector("input").addEventListener ('keyup',function (e) {
-    console.log(e);
     if (e.key === 'Enter') {
         add()
     }
@@ -47,7 +46,7 @@ document.querySelector("#clear-completed").onclick = function () {
         if (tick_tasks[i].parentNode.style.textDecoration)
             tick_tasks[i].parentNode.remove();
     }
-};
+}
 
 document.querySelector("#active").onclick = function () {
     let tick_tasks = document.querySelectorAll(".tick");
@@ -82,5 +81,12 @@ document.querySelector("#all").onclick = function () {
         else if(!tick_tasks[i].parentNode.style.textDecoration) {
             tick_tasks[i].parentNode.style.display = "flex";
         }
+    }
+}
+
+document.querySelector("#all-clear").onclick = function () {
+    let tick_tasks = document.querySelectorAll(".tick");
+    for (let i = 0; i < tick_tasks.length; i++) {
+            tick_tasks[i].parentNode.remove();
     }
 }
